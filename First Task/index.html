@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-webfont.woff2">
+    <link rel="styleshet" href="./TaskList.css">
+    <link rel="icon" href="./Resources/download-removebg-preview (1).png">
+    <title>Task</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #d9d9d9;
+        }
+        /* Hero Starts */
+        
+        .Hero {
+            display: block;
+            width: 30vw;
+            height: 80vh;
+            margin: 0 auto;
+            margin-top: 30px;
+            padding: 30px;
+            background: #f2f2f2;
+            border-radius: 40px;
+        }
+        
+        .Profile3 {
+            width: 40px;
+            height: 40px;
+            border: 8px solid rgb(170, 226, 182);
+            border-radius: 50px;
+        }
+        
+        .Navbar h4 {
+            position: absolute;
+            margin-left: 60px;
+        }
+        
+        p {
+            margin: 0 auto;
+            width: 23vw;
+            text-align: center;
+            justify-content: center;
+            line-height: 21px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        
+        .Semi-Hero {
+            border: 1px solid#c2bfbfb9;
+            height: 240px;
+            margin-top: 30px;
+            border-radius: 40px;
+        }
+        
+        .Semi-Hero-New-div {
+            border-bottom: 1px solid #c2bfbfb9;
+            margin-top: 10px;
+            width: 100%;
+            align-items: center;
+            display: block;
+        }
+        
+        .Semi-Hero-New-div select {
+            margin-left: 220px;
+            margin-top: -20px;
+            border: none;
+            background: transparent;
+            color: #444343b9;
+        }
+        
+        div .Semi-hero-div {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border: 1px solid#c2bfbfb9;
+            margin-top: 35px;
+            border-radius: 40px;
+            text-align: center;
+            justify-content: center;
+            background: #f2f2f2;
+        }
+        
+        div .Semi-hero-div:hover {
+            background-color: rgb(180, 179, 179);
+        }
+        
+        .Mini-hero {
+            height: 100px;
+        }
+        
+        .Mini-hero .Slide-show {
+            width: 80px;
+            height: 90px;
+            padding-top: 10px;
+        }
+        
+        .Mini-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+        
+        input[type=text] {
+            width: 100px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            border-radius: 50px;
+            border: 1px solid rgb(180, 179, 179);
+        }
+        
+        input[type=text]:focus {
+            width: 50%;
+            border: 1px solid rgb(180, 179, 179);
+        }
+        
+        .Search_icon {
+            position: absolute;
+            width: 25px;
+            height: 20px;
+            margin-left: 245px;
+        }
+        
+        .checkbox {
+            position: relative;
+            margin-top: 70px;
+        }
+        /* Media query */
+    </style>
+</head>
+
+<body>
+    <div class="Hero">
+        <div class="Navbar">
+            <img class="Profile3" src="./Resources/Profile2.png">
+
+            <h4>Accounts</h4>
+
+            <img src="./Resources/Search (2).png" class="Search_icon">
+            <input type="text" name="search" placeholder="       Search...">
+        </div>
+
+        <p>You can add new programming languages corses, just click on the select button and start learning</p>
+        <hr>
+        <div class=" Semi-Hero ">
+            <div class="Semi-Hero-New-div ">
+                <p>Select a programming language</p><select id="language-select">
+                        <option></option>
+                        <option>Agda</option>
+                        <option>Ajax</option>
+                        <option>Bash</option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>C#</option> 
+                        <option>COBOL</option> 
+                        <option>CSS</option> 
+                        <option>dart</option> 
+                        <option>Go</option> 
+                        <option>HTML</option> 
+                        <option>Haskel</option> 
+                        <option>Java</option> 
+                        <option>JavaScript</option> 
+                        <option>Kotline</option>
+                        <option >Lau</option>
+                        <option>MATLAB</option>
+                        <option>Objective-C</option>
+                        <option>PASCAL</option>
+                        <option>Perl</option>
+                        <option>PHP</option>
+                        <option>Python</option>
+                        <option>Pyret</option>
+                        <option>Racket</option>
+                        <option>Ruby</option>
+                        <option>Rust</option>
+                        <option>Scala</option>
+                        <option>Scheme</option>
+                        <option>TypeScript</option>
+                    </select></div>
+
+
+            <div>
+                <i aria-placeholder="Search" class=" fa fa-search"><input></i></div>
+            <div class="Mini-hero " id="language-view">
+                <img src="./Resources/Icons/C.png " class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <img src="./Resources/Icons/Lua.png " class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <img src="./Resources/Icons/HTML.png " class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <img src="./Resources/Icons/OBJ-C.png " class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <img src="./Resources/Icons/COBOL.png " class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <img src="./Resources/Icons/CSS.png" class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <img src="./Resources/Icons//Java.png" class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+                <!-- <img src="./Resources/Icons/Rust.png " class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox"> -->
+                <img src="./Resources/Icons/TtypeScript.png" class="Slide-show">
+                <input type="checkbox" checked="checked" class="checkbox">
+
+            </div>
+            <div>
+                <p>You can add up to 5 languaes at a time</p>
+            </div>
+            <div>
+                <button class="Semi-hero-div" id="btn-add" onclick="myFunction()">Add</button>
+            </div>
+        </div>
+
+</body>
+<script src=" ./FirstTask.js "></script>
+
+</html>
